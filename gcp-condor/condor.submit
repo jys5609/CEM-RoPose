@@ -6,5 +6,6 @@ Output                  = condor/$(cluster).$(process).out
 Log                     = condor/$(cluster).$(process).log
 Error                   = condor/$(cluster).$(process).err
 RequestCpus             = 60
+request_memory          = 100GB
 
 queue 36
