@@ -1501,12 +1501,13 @@ def main():
     for i in range(5944):
         pid_to_data.append(('Realsense', i, str(i).zfill(6)))
 
+    input_root = None if args.input_root is None else Path(args.input_root)
+
     input_root = input_root + '/' + pid_to_data[pid][0]
     start_frame = pid_to_data[pid][1]
     max_frames = 1
     save_result_path = '/mnt/nfs/Results/' + pid_to_data[pid][0] +'/' + pid_to_data[pid][2]
 
-    input_root = None if args.input_root is None else Path(args.input_root)
     benchmark = (
         benchmark_name_from_input_root(input_root)
         if input_root is not None
