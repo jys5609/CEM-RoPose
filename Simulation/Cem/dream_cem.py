@@ -342,6 +342,7 @@ class CEMActionPredictor:
         output_root=None,
         scene_xml_path=None,
         calibration_json_path=None,
+        save_result_path=None
     ):
         self.sim = sim
 
@@ -375,6 +376,7 @@ class CEMActionPredictor:
             self.calibration_json_path = None
         else:
             self.calibration_json_path = Path(calibration_json_path)
+        self.save_result_path=save_result_path
 
         self.dream_root = Path(dream_root) if dream_root is not None else DREAM_ROOT
         self.input_root = Path(input_root) if input_root is not None else None
@@ -1107,7 +1109,7 @@ class CEMActionPredictor:
         with open(self.output_json_path, "w") as f:
             json.dump(payload, f, indent=2)
         
-        with open(save_result_path+'/result.json', "w") as f:
+        with open(self.save_result_path+'/result.json', "w") as f:
             json.dump(payload, f, indent=2)
 
     def run(self):
@@ -1530,8 +1532,8 @@ def main():
             random_seed=args.random_seed,
             binary_weight=args.binary_weight,
             depth_weight=args.depth_weight,
-            start_frame=args.start_frame,
-            max_frames=args.max_frames,
+            start_frame=start_frame,
+            max_frames=max_frames,
             log_interval=args.log_interval,
             quiet=args.quiet,
             test_mode=args.test_mode,
@@ -1544,7 +1546,34 @@ def main():
             output_root=args.output_root,
             scene_xml_path=xml,
             calibration_json_path=args.calibration_json,
+            save_result_path=save_result_path,
         )
+
+        # predictor = CEMActionPredictor(
+        #     sim=sim,
+        #     population_size=args.population_size,
+        #     elite_fraction=args.elite_fraction,
+        #     smoothing=args.smoothing,
+        #     settle_steps=args.settle_steps,
+        #     local_refine_steps=args.local_refine_steps,
+        #     random_seed=args.random_seed,
+        #     binary_weight=args.binary_weight,
+        #     depth_weight=args.depth_weight,
+        #     start_frame=args.start_frame,
+        #     max_frames=args.max_frames,
+        #     log_interval=args.log_interval,
+        #     quiet=args.quiet,
+        #     test_mode=args.test_mode,
+        #     num_workers=args.num_workers,
+        #     seg_model=args.seg_model,
+        #     benchmark=benchmark,
+        #     cem_mode=args.cem_mode,
+        #     input_root=input_root,
+        #     dream_root=args.dream_root,
+        #     output_root=args.output_root,
+        #     scene_xml_path=xml,
+        #     calibration_json_path=args.calibration_json,
+        # )
 
         if args.cem_mode == "pose":
             predictor.pose_run()
