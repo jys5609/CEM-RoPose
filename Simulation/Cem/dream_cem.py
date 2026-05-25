@@ -1109,7 +1109,7 @@ class CEMActionPredictor:
         with open(self.output_json_path, "w") as f:
             json.dump(payload, f, indent=2)
         
-        with open(self.save_result_path+'/result.json', "w") as f:
+        with open(self.save_result_path / 'result.json', "w") as f:
             json.dump(payload, f, indent=2)
 
     def run(self):
@@ -1506,7 +1506,7 @@ def main():
     input_root = input_root / pid_to_data[pid][0]
     start_frame = pid_to_data[pid][1]
     max_frames = 1
-    save_result_path = '/mnt/nfs/Results/' + pid_to_data[pid][0] +'/' + pid_to_data[pid][2]
+    save_result_path = Path('/mnt/nfs/Results/' + pid_to_data[pid][0] +'/' + pid_to_data[pid][2])
     (save_result_path).mkdir(parents=True, exist_ok=True)
 
     benchmark = (
