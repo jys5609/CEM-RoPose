@@ -1507,6 +1507,7 @@ def main():
     start_frame = pid_to_data[pid][1]
     max_frames = 1
     save_result_path = '/mnt/nfs/Results/' + pid_to_data[pid][0] +'/' + pid_to_data[pid][2]
+    (save_result_path).mkdir(parents=True, exist_ok=True)
 
     benchmark = (
         benchmark_name_from_input_root(input_root)
