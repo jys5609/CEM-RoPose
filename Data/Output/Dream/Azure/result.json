@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-05-25T03:42:30.307861",
+  "scene_xml_path": "/home/tykim/DreamTask/PhysicalAI_DreamBench/Data/GemmaInit/Azure/InitPose/scene.xml",
+  "dream_root": "/home/tykim/DreamTask/PhysicalAI_DreamBench/Data/Dream",
+  "benchmark": "azure",
+  "segmentation_binary_dir": "/home/tykim/DreamTask/DreamDataset/Azure",
+  "output_json_path": "/home/tykim/DreamTask/PhysicalAI_DreamBench/Data/Output/Dream/Azure/result.json",
+  "sequence_name": "azure",
+  "sequence_sensor": "Azure",
+  "sequence_root": "/home/tykim/DreamTask/DreamDataset/Azure",
+  "camera_name": "real_view_cam",
+  "image_width": 640,
+  "image_height": 480,
+  "input_frame_layout": "Data/Dream/<Benchmark>/<frame_id>/{best_camera_setting.json,<binary_mask_image>}",
+  "objective": "maximize weighted binary segmentation alignment score",
+  "binary_score_metric": "dot product over flattened (+1,-1) binary masks",
+  "depth_loss_metric": "currently unused in pose mode; worker depth term is fixed to 0",
+  "depth_excluded_values": [
+    0
+  ],
+  "total_cem_elapsed_sec": 613.6272504699882,
+  "num_frames_processed": 1,
+  "cem_config": {
+    "population_size": 1000,
+    "elite_fraction": 0.05,
+    "elite_count": 50,
+    "smoothing": 0.1,
+    "settle_steps": 1,
+    "local_refine_steps": 1,
+    "binary_weight": 1.0,
+    "depth_weight": 1e-06,
+    "start_frame": 0,
+    "max_frames": null,
+    "log_interval": 1,
+    "quiet": false,
+    "num_workers": 32
+  },
+  "frames": [
+    {
+      "frame_index": 0,
+      "frame_id": "000000",
+      "frame_stem": "000000.rgb_mask_00",
+      "frame_dir": "/home/tykim/DreamTask/DreamDataset/Azure/000000",
+      "binary_image_file": "000000.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/DreamTask/DreamDataset/Azure/000000/000000.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/DreamTask/DreamDataset/Azure/000000/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/DreamTask/PhysicalAI_DreamBench/Data/Output/Dream/Azure/Frames/000000.png",
+      "joint_positions": [
+        -1.3798370719253634,
+        -0.8941331582033845,
+        -0.13433002388472115,
+        -2.708824537017189,
+        -0.15857447374905398,
+        1.881363658198718,
+        -0.48420721791119403,
+        0.02181933505860843
+      ],
+      "robot_pose": [
+        -0.10882592141317453,
+        -0.13589063040527283,
+        0.8178361992136678,
+        0.0036354098360458294,
+        -0.004847087098550132,
+        3.2657590450351304
+      ],
+      "reward": 300382.0,
+      "end_effector_position": [
+        -0.14548911611281373,
+        0.1625443922717002,
+        1.198256510881404
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          -0.9991839269521335,
+          0.02909161981517213,
+          0.02802066696281747
+        ],
+        [
+          0.03116904279448545,
+          0.9965589134258233,
+          0.07680379445584731
+        ],
+        [
+          -0.025689898633260135,
+          0.07761449431691217,
+          -0.9966524064989464
+        ]
+      ],
+      "cem_elapsed_sec": 611.2471299240133
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+test_name : azure-sam3
+note_path : /mnt/nfs/PhysicalAI_Share/Data/Output/note.txt
+population_size : 10000
+elite_fraction : 0.05
+smoothing : 0.1
+num_workers : 60
+
+binary_weight : 1.0
+depth_weight : 1e-06
+

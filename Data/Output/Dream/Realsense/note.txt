@@ -1,0 +1,114 @@
+task_name : realsense
+sensor : Realsense
+version : sequence
+task_root : /home/tykim/DreamTask/DreamDataset/Realsense
+note_path : /home/tykim/DreamTask/PhysicalAI_DreamBench/Data/Output/Dream/Realsense/note.txt
+population_size : 10000
+elite_fraction : 0.05
+smoothing : 0.1
+num_workers : 32
+
+binary_weight : 1.0
+depth_weight : 1e-06
+
+[FRAME 0000] 000000.rgb_mask_00 iter=1/30 iter_reward=255120.0000 running_best_reward=255120.0000 iter_elapsed=3.43s
+[FRAME 0000] 000000.rgb_mask_00 iter=2/30 iter_reward=266368.0000 running_best_reward=266368.0000 iter_elapsed=0.82s
+[FRAME 0000] 000000.rgb_mask_00 iter=3/30 iter_reward=270484.0000 running_best_reward=270484.0000 iter_elapsed=0.80s
+[FRAME 0000] 000000.rgb_mask_00 iter=4/30 iter_reward=272436.0000 running_best_reward=272436.0000 iter_elapsed=0.61s
+[FRAME 0000] 000000.rgb_mask_00 iter=5/30 iter_reward=270576.0000 running_best_reward=272436.0000 iter_elapsed=0.59s
+[FRAME 0000] 000000.rgb_mask_00 iter=6/30 iter_reward=268484.0000 running_best_reward=272436.0000 iter_elapsed=0.57s
+[FRAME 0000] 000000.rgb_mask_00 iter=7/30 iter_reward=268760.0000 running_best_reward=272436.0000 iter_elapsed=0.61s
+[FRAME 0000] 000000.rgb_mask_00 iter=8/30 iter_reward=265678.0000 running_best_reward=272436.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=9/30 iter_reward=267792.0000 running_best_reward=272436.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=10/30 iter_reward=269570.0000 running_best_reward=272436.0000 iter_elapsed=0.70s
+[FRAME 0000] 000000.rgb_mask_00 iter=11/30 iter_reward=266376.0000 running_best_reward=272436.0000 iter_elapsed=0.64s
+[FRAME 0000] 000000.rgb_mask_00 iter=12/30 iter_reward=277974.0000 running_best_reward=277974.0000 iter_elapsed=0.64s
+[FRAME 0000] 000000.rgb_mask_00 iter=13/30 iter_reward=269712.0000 running_best_reward=277974.0000 iter_elapsed=0.61s
+[FRAME 0000] 000000.rgb_mask_00 iter=14/30 iter_reward=270946.0000 running_best_reward=277974.0000 iter_elapsed=0.56s
+[FRAME 0000] 000000.rgb_mask_00 iter=15/30 iter_reward=270348.0000 running_best_reward=277974.0000 iter_elapsed=0.51s
+[FRAME 0000] 000000.rgb_mask_00 iter=16/30 iter_reward=269346.0000 running_best_reward=277974.0000 iter_elapsed=0.46s
+[FRAME 0000] 000000.rgb_mask_00 iter=17/30 iter_reward=272910.0000 running_best_reward=277974.0000 iter_elapsed=0.43s
+[FRAME 0000] 000000.rgb_mask_00 iter=18/30 iter_reward=278584.0000 running_best_reward=278584.0000 iter_elapsed=0.60s
+[FRAME 0000] 000000.rgb_mask_00 iter=19/30 iter_reward=278090.0000 running_best_reward=278584.0000 iter_elapsed=0.50s
+[FRAME 0000] 000000.rgb_mask_00 iter=20/30 iter_reward=276314.0000 running_best_reward=278584.0000 iter_elapsed=0.44s
+[FRAME 0000] 000000.rgb_mask_00 iter=21/30 iter_reward=272118.0000 running_best_reward=278584.0000 iter_elapsed=0.50s
+[FRAME 0000] 000000.rgb_mask_00 iter=22/30 iter_reward=273388.0000 running_best_reward=278584.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=23/30 iter_reward=273800.0000 running_best_reward=278584.0000 iter_elapsed=0.57s
+[FRAME 0000] 000000.rgb_mask_00 iter=24/30 iter_reward=271300.0000 running_best_reward=278584.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=25/30 iter_reward=277444.0000 running_best_reward=278584.0000 iter_elapsed=0.58s
+[FRAME 0000] 000000.rgb_mask_00 iter=26/30 iter_reward=276766.0000 running_best_reward=278584.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=27/30 iter_reward=276464.0000 running_best_reward=278584.0000 iter_elapsed=0.63s
+[FRAME 0000] 000000.rgb_mask_00 iter=28/30 iter_reward=281386.0000 running_best_reward=281386.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=29/30 iter_reward=282348.0000 running_best_reward=282348.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=30/30 iter_reward=278872.0000 running_best_reward=282348.0000 iter_elapsed=0.47s
+
+[FRAME 0000] 000000.rgb_mask_00 iter=1/50 iter_reward=289890.0000 running_best_reward=289890.0000 iter_elapsed=0.58s
+[FRAME 0000] 000000.rgb_mask_00 iter=2/50 iter_reward=290586.0000 running_best_reward=290586.0000 iter_elapsed=0.44s
+[FRAME 0000] 000000.rgb_mask_00 iter=3/50 iter_reward=296032.0000 running_best_reward=296032.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=4/50 iter_reward=298212.0000 running_best_reward=298212.0000 iter_elapsed=0.39s
+[FRAME 0000] 000000.rgb_mask_00 iter=5/50 iter_reward=298326.0000 running_best_reward=298326.0000 iter_elapsed=0.38s
+[FRAME 0000] 000000.rgb_mask_00 iter=6/50 iter_reward=298984.0000 running_best_reward=298984.0000 iter_elapsed=0.51s
+[FRAME 0000] 000000.rgb_mask_00 iter=7/50 iter_reward=298824.0000 running_best_reward=298984.0000 iter_elapsed=0.47s
+[FRAME 0000] 000000.rgb_mask_00 iter=8/50 iter_reward=299494.0000 running_best_reward=299494.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=9/50 iter_reward=299086.0000 running_best_reward=299494.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=10/50 iter_reward=299388.0000 running_best_reward=299494.0000 iter_elapsed=0.44s
+[FRAME 0000] 000000.rgb_mask_00 iter=11/50 iter_reward=299678.0000 running_best_reward=299678.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=12/50 iter_reward=299556.0000 running_best_reward=299678.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=13/50 iter_reward=299964.0000 running_best_reward=299964.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=14/50 iter_reward=299528.0000 running_best_reward=299964.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=15/50 iter_reward=299874.0000 running_best_reward=299964.0000 iter_elapsed=0.66s
+[FRAME 0000] 000000.rgb_mask_00 iter=16/50 iter_reward=300212.0000 running_best_reward=300212.0000 iter_elapsed=0.54s
+[FRAME 0000] 000000.rgb_mask_00 iter=17/50 iter_reward=299554.0000 running_best_reward=300212.0000 iter_elapsed=0.66s
+[FRAME 0000] 000000.rgb_mask_00 iter=18/50 iter_reward=299842.0000 running_best_reward=300212.0000 iter_elapsed=0.58s
+[FRAME 0000] 000000.rgb_mask_00 iter=19/50 iter_reward=300090.0000 running_best_reward=300212.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=20/50 iter_reward=299420.0000 running_best_reward=300212.0000 iter_elapsed=0.43s
+[FRAME 0000] 000000.rgb_mask_00 iter=21/50 iter_reward=300416.0000 running_best_reward=300416.0000 iter_elapsed=0.53s
+[FRAME 0000] 000000.rgb_mask_00 iter=22/50 iter_reward=299576.0000 running_best_reward=300416.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=23/50 iter_reward=300090.0000 running_best_reward=300416.0000 iter_elapsed=0.51s
+[FRAME 0000] 000000.rgb_mask_00 iter=24/50 iter_reward=300290.0000 running_best_reward=300416.0000 iter_elapsed=0.40s
+[FRAME 0000] 000000.rgb_mask_00 iter=25/50 iter_reward=299980.0000 running_best_reward=300416.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=26/50 iter_reward=300098.0000 running_best_reward=300416.0000 iter_elapsed=0.53s
+[FRAME 0000] 000000.rgb_mask_00 iter=27/50 iter_reward=300056.0000 running_best_reward=300416.0000 iter_elapsed=0.54s
+[FRAME 0000] 000000.rgb_mask_00 iter=28/50 iter_reward=299826.0000 running_best_reward=300416.0000 iter_elapsed=0.54s
+[FRAME 0000] 000000.rgb_mask_00 iter=29/50 iter_reward=299792.0000 running_best_reward=300416.0000 iter_elapsed=0.56s
+[FRAME 0000] 000000.rgb_mask_00 iter=30/50 iter_reward=299324.0000 running_best_reward=300416.0000 iter_elapsed=0.62s
+[FRAME 0000] 000000.rgb_mask_00 iter=31/50 iter_reward=300008.0000 running_best_reward=300416.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=32/50 iter_reward=299310.0000 running_best_reward=300416.0000 iter_elapsed=0.49s
+[FRAME 0000] 000000.rgb_mask_00 iter=33/50 iter_reward=299598.0000 running_best_reward=300416.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=34/50 iter_reward=299384.0000 running_best_reward=300416.0000 iter_elapsed=0.50s
+[FRAME 0000] 000000.rgb_mask_00 iter=35/50 iter_reward=299622.0000 running_best_reward=300416.0000 iter_elapsed=0.56s
+[FRAME 0000] 000000.rgb_mask_00 iter=36/50 iter_reward=299838.0000 running_best_reward=300416.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=37/50 iter_reward=299632.0000 running_best_reward=300416.0000 iter_elapsed=0.53s
+[FRAME 0000] 000000.rgb_mask_00 iter=38/50 iter_reward=299872.0000 running_best_reward=300416.0000 iter_elapsed=0.43s
+[FRAME 0000] 000000.rgb_mask_00 iter=39/50 iter_reward=299794.0000 running_best_reward=300416.0000 iter_elapsed=0.42s
+[FRAME 0000] 000000.rgb_mask_00 iter=40/50 iter_reward=299882.0000 running_best_reward=300416.0000 iter_elapsed=0.53s
+[FRAME 0000] 000000.rgb_mask_00 iter=41/50 iter_reward=300024.0000 running_best_reward=300416.0000 iter_elapsed=0.50s
+[FRAME 0000] 000000.rgb_mask_00 iter=42/50 iter_reward=299462.0000 running_best_reward=300416.0000 iter_elapsed=0.58s
+[FRAME 0000] 000000.rgb_mask_00 iter=43/50 iter_reward=299754.0000 running_best_reward=300416.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=44/50 iter_reward=299770.0000 running_best_reward=300416.0000 iter_elapsed=0.56s
+[FRAME 0000] 000000.rgb_mask_00 iter=45/50 iter_reward=299572.0000 running_best_reward=300416.0000 iter_elapsed=0.49s
+[FRAME 0000] 000000.rgb_mask_00 iter=46/50 iter_reward=300164.0000 running_best_reward=300416.0000 iter_elapsed=0.58s
+[FRAME 0000] 000000.rgb_mask_00 iter=47/50 iter_reward=299990.0000 running_best_reward=300416.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=48/50 iter_reward=300364.0000 running_best_reward=300416.0000 iter_elapsed=0.62s
+[FRAME 0000] 000000.rgb_mask_00 iter=49/50 iter_reward=300034.0000 running_best_reward=300416.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=50/50 iter_reward=300156.0000 running_best_reward=300416.0000 iter_elapsed=0.47s
+
+[FRAME 0000] 000000.rgb_mask_00 iter=1/30 iter_reward=264880.0000 running_best_reward=264880.0000 iter_elapsed=0.49s
+[FRAME 0000] 000000.rgb_mask_00 iter=2/30 iter_reward=262994.0000 running_best_reward=264880.0000 iter_elapsed=0.42s
+[FRAME 0000] 000000.rgb_mask_00 iter=3/30 iter_reward=258838.0000 running_best_reward=264880.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=4/30 iter_reward=265578.0000 running_best_reward=265578.0000 iter_elapsed=0.47s
+[FRAME 0000] 000000.rgb_mask_00 iter=5/30 iter_reward=270090.0000 running_best_reward=270090.0000 iter_elapsed=0.45s
+[FRAME 0000] 000000.rgb_mask_00 iter=6/30 iter_reward=276036.0000 running_best_reward=276036.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=7/30 iter_reward=266664.0000 running_best_reward=276036.0000 iter_elapsed=0.36s
+[FRAME 0000] 000000.rgb_mask_00 iter=8/30 iter_reward=273006.0000 running_best_reward=276036.0000 iter_elapsed=0.48s
+[FRAME 0000] 000000.rgb_mask_00 iter=9/30 iter_reward=267748.0000 running_best_reward=276036.0000 iter_elapsed=0.59s
+[FRAME 0000] 000000.rgb_mask_00 iter=10/30 iter_reward=269966.0000 running_best_reward=276036.0000 iter_elapsed=0.44s
+[FRAME 0000] 000000.rgb_mask_00 iter=11/30 iter_reward=269938.0000 running_best_reward=276036.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=12/30 iter_reward=268338.0000 running_best_reward=276036.0000 iter_elapsed=0.52s
+[FRAME 0000] 000000.rgb_mask_00 iter=13/30 iter_reward=272684.0000 running_best_reward=276036.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=14/30 iter_reward=268746.0000 running_best_reward=276036.0000 iter_elapsed=0.51s
+[FRAME 0000] 000000.rgb_mask_00 iter=15/30 iter_reward=275872.0000 running_best_reward=276036.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=16/30 iter_reward=273052.0000 running_best_reward=276036.0000 iter_elapsed=0.46s
+[FRAME 0000] 000000.rgb_mask_00 iter=17/30 iter_reward=273576.0000 running_best_reward=276036.0000 iter_elapsed=0.55s
+[FRAME 0000] 000000.rgb_mask_00 iter=18/30 iter_reward=270652.0000 running_best_reward=276036.0000 iter_elapsed=0.42s
+[FRAME 0000] 000000.rgb_mask_00 iter=19/30 iter_reward=275574.0000 running_best_reward=276036.0000 iter_elapsed=0.43s

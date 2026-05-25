@@ -1,0 +1,612 @@
+{
+  "created_at": "2026-05-24T16:07:51.262087",
+  "scene_xml_path": "/home/tykim/PhysicalAI_DreamBench/Data/GemmaInit/Kinect360/InitPose/scene.xml",
+  "dream_root": "/home/tykim/tmppp/Dream",
+  "benchmark": "kinect",
+  "segmentation_binary_dir": "/home/tykim/tmppp/Dream/Kinect",
+  "output_json_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/result.json",
+  "sequence_name": "kinect",
+  "sequence_sensor": "Kinect",
+  "sequence_root": "/home/tykim/tmppp/Dream/Kinect",
+  "camera_name": "real_view_cam",
+  "image_width": 640,
+  "image_height": 480,
+  "input_frame_layout": "Data/Dream/<Benchmark>/<frame_id>/{best_camera_setting.json,<binary_mask_image>}",
+  "objective": "maximize weighted binary segmentation alignment score",
+  "binary_score_metric": "dot product over flattened (+1,-1) binary masks",
+  "depth_loss_metric": "currently unused in pose mode; worker depth term is fixed to 0",
+  "depth_excluded_values": [
+    0
+  ],
+  "total_cem_elapsed_sec": 4703.746948938991,
+  "num_frames_processed": 11,
+  "cem_config": {
+    "population_size": 10000,
+    "elite_fraction": 0.05,
+    "elite_count": 500,
+    "smoothing": 0.1,
+    "settle_steps": 1,
+    "local_refine_steps": 1,
+    "binary_weight": 1.0,
+    "depth_weight": 1e-06,
+    "start_frame": 0,
+    "max_frames": null,
+    "log_interval": 1,
+    "quiet": false,
+    "num_workers": 32
+  },
+  "frames": [
+    {
+      "frame_index": 0,
+      "frame_id": "000000",
+      "frame_stem": "000000.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000000",
+      "binary_image_file": "000000.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000000/000000.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000000/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000000.png",
+      "joint_positions": [
+        -0.45868852020929074,
+        -1.0021277829636221,
+        0.06817670552157917,
+        -2.809810045369983,
+        0.013068855562275328,
+        1.936071783667293,
+        0.7505101757201627,
+        0.01049747872102406
+      ],
+      "robot_pose": [
+        -0.16050020741332002,
+        -0.07188257984278115,
+        0.678362810552769,
+        0.0029043208279526983,
+        0.0028870848329104128,
+        0.4416288968452555
+      ],
+      "reward": 301186.0,
+      "end_effector_position": [
+        0.12522496244074935,
+        -0.06293592784933329,
+        1.0456459699515739
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9909020530794843,
+          0.05133947357655551,
+          0.12440811732255305
+        ],
+        [
+          0.056717670034187456,
+          -0.9975854782747988,
+          -0.040078915169088215
+        ],
+        [
+          0.12205010081418613,
+          0.04677041787412311,
+          -0.9914213538668228
+        ]
+      ],
+      "cem_elapsed_sec": 406.3677930539998
+    },
+    {
+      "frame_index": 1,
+      "frame_id": "000001",
+      "frame_stem": "000001.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000001",
+      "binary_image_file": "000001.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000001/000001.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000001/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000001.png",
+      "joint_positions": [
+        -0.013534537411754144,
+        -0.9811668351995224,
+        0.07533816689696593,
+        -2.78718323991521,
+        -0.008189506801508095,
+        1.9541725368816303,
+        0.8176137895722113,
+        0.022826808607907402
+      ],
+      "robot_pose": [
+        -0.17738193688631365,
+        -0.09180498519588903,
+        0.67230502577062,
+        -0.0010832909275558735,
+        -0.0002765395860983254,
+        -0.0041675783036168035
+      ],
+      "reward": 299712.0,
+      "end_effector_position": [
+        0.11591188918556444,
+        -0.08290156249231925,
+        1.048225999906985
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.988948381156773,
+          -0.005772988686258654,
+          0.14814780460413063
+        ],
+        [
+          0.004208482699518696,
+          -0.9977458921359901,
+          -0.06697330363004769
+        ],
+        [
+          0.14820049959687448,
+          0.06685661767830495,
+          -0.9866948893106984
+        ]
+      ],
+      "cem_elapsed_sec": 412.6343228670012
+    },
+    {
+      "frame_index": 2,
+      "frame_id": "000002",
+      "frame_stem": "000002.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000002",
+      "binary_image_file": "000002.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000002/000002.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000002/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000002.png",
+      "joint_positions": [
+        -0.3288530805059038,
+        -0.9843252317782375,
+        0.1031945156288332,
+        -2.772813558231774,
+        -0.033289740921983224,
+        1.8466448874801822,
+        0.7445240409118838,
+        0.02281453983323592
+      ],
+      "robot_pose": [
+        -0.16468699823772648,
+        -0.08270993277283782,
+        0.6735279728335426,
+        -0.0025638673680967606,
+        0.0025708355676282613,
+        0.2913704251285849
+      ],
+      "reward": 301354.0,
+      "end_effector_position": [
+        0.11131051606710746,
+        -0.078649501255239,
+        1.0453309417747954
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9961259079736609,
+          0.06792163479785826,
+          0.055855411465986694
+        ],
+        [
+          0.07419831996124979,
+          -0.9900835464212736,
+          -0.11928612836704942
+        ],
+        [
+          0.047199415023666445,
+          0.1229683806198104,
+          -0.9912875428396968
+        ]
+      ],
+      "cem_elapsed_sec": 429.2057637530088
+    },
+    {
+      "frame_index": 3,
+      "frame_id": "000003",
+      "frame_stem": "000003.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000003",
+      "binary_image_file": "000003.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000003/000003.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000003/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000003.png",
+      "joint_positions": [
+        -0.3101163452443494,
+        -0.9155079221769051,
+        0.07180596429205499,
+        -2.7825155647774316,
+        -0.01487198285562652,
+        1.9397963115420456,
+        0.794482282939954,
+        0.020329721454116087
+      ],
+      "robot_pose": [
+        -0.11168673552983793,
+        -0.14845365934407725,
+        0.7231920759570586,
+        0.002694252389505033,
+        -0.0027272228038053626,
+        0.27734254475383047
+      ],
+      "reward": 301736.0,
+      "end_effector_position": [
+        0.18139489993954544,
+        -0.14730714363554653,
+        1.0813252477417357
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9972023257907312,
+          0.006147067557666709,
+          0.07449654353053255
+        ],
+        [
+          0.011138693648525237,
+          -0.9977058296039354,
+          -0.0667757970983939
+        ],
+        [
+          0.07391516042977485,
+          0.06741877434930904,
+          -0.9949830440383776
+        ]
+      ],
+      "cem_elapsed_sec": 424.204873175011
+    },
+    {
+      "frame_index": 4,
+      "frame_id": "000004",
+      "frame_stem": "000004.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000004",
+      "binary_image_file": "000004.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000004/000004.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000004/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000004.png",
+      "joint_positions": [
+        -0.37019428009893485,
+        -1.0540763661113117,
+        0.06962031130708723,
+        -2.854911810341861,
+        -0.0455698824636368,
+        1.9001092044253445,
+        0.7981993505452092,
+        0.03251874990902523
+      ],
+      "robot_pose": [
+        -0.1521087501552019,
+        -0.07802323375604,
+        0.6884245131786396,
+        0.002025968056911029,
+        -0.0005851417562838706,
+        0.3455917511381479
+      ],
+      "reward": 300068.0,
+      "end_effector_position": [
+        0.11469348712420468,
+        -0.08235228474388898,
+        1.0450934230375448
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9950159919060209,
+          0.007459309006100792,
+          0.09943608278903328
+        ],
+        [
+          0.017464503441343995,
+          -0.9948208241230843,
+          -0.10013250726219479
+        ],
+        [
+          0.09817416651453305,
+          0.10137004784559249,
+          -0.9899929022114036
+        ]
+      ],
+      "cem_elapsed_sec": 420.0093596369843
+    },
+    {
+      "frame_index": 5,
+      "frame_id": "000005",
+      "frame_stem": "000005.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000005",
+      "binary_image_file": "000005.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000005/000005.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000005/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000005.png",
+      "joint_positions": [
+        -0.47342800173411836,
+        -0.9648885320582882,
+        -0.0035198327182679456,
+        -2.8240869080901616,
+        -0.06283614082298916,
+        1.897747720026061,
+        0.7175059188869817,
+        0.022074656546020647
+      ],
+      "robot_pose": [
+        -0.09740680166983298,
+        -0.13487932732021235,
+        0.7329391530328393,
+        -0.004504356055139755,
+        0.0027369447939753536,
+        0.470472407212307
+      ],
+      "reward": 301780.0,
+      "end_effector_position": [
+        0.17791776779692825,
+        -0.1450926096547651,
+        1.0799953924755674
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9960420486749478,
+          0.08077154308113359,
+          0.037097103656566294
+        ],
+        [
+          0.08295725470466607,
+          -0.9946387014263721,
+          -0.06174097113526678
+        ],
+        [
+          0.03191130149772338,
+          0.0645740772535951,
+          -0.9974025553323836
+        ]
+      ],
+      "cem_elapsed_sec": 412.6490602430131
+    },
+    {
+      "frame_index": 6,
+      "frame_id": "000006",
+      "frame_stem": "000006.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000006",
+      "binary_image_file": "000006.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000006/000006.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000006/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000006.png",
+      "joint_positions": [
+        -0.48549661564988167,
+        -1.0092368648597942,
+        0.025420759868113763,
+        -2.7950039865691725,
+        -0.15866574336062156,
+        1.829234951123956,
+        0.7197988741883532,
+        0.01778064052025426
+      ],
+      "robot_pose": [
+        -0.16595300061173202,
+        -0.07445941229466164,
+        0.6781882768068912,
+        0.0009424636055734713,
+        -0.001038948813004263,
+        0.48234090898747706
+      ],
+      "reward": 300646.0,
+      "end_effector_position": [
+        0.10062343056358435,
+        -0.0994034066552267,
+        1.0478670316130971
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9928487759500392,
+          0.10913950894914419,
+          0.04837226148162865
+        ],
+        [
+          0.11592507914633697,
+          -0.9781913773684713,
+          -0.17234559833917068
+        ],
+        [
+          0.02850761511285868,
+          0.17672067459216795,
+          -0.9838481178780923
+        ]
+      ],
+      "cem_elapsed_sec": 419.42089673300507
+    },
+    {
+      "frame_index": 7,
+      "frame_id": "000007",
+      "frame_stem": "000007.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000007",
+      "binary_image_file": "000007.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000007/000007.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000007/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000007.png",
+      "joint_positions": [
+        -0.20666097736011224,
+        -0.9643746063990107,
+        0.10391150963000184,
+        -2.732180885971559,
+        -0.12941352031313258,
+        1.7226155365065756,
+        0.7440952254217565,
+        0.02019407458774117
+      ],
+      "robot_pose": [
+        -0.16242346159886395,
+        -0.07874035996450746,
+        0.6689747157356839,
+        0.00022305787795417814,
+        -0.002105240358368128,
+        0.17450729717204272
+      ],
+      "reward": 300514.0,
+      "end_effector_position": [
+        0.09631055519611488,
+        -0.09270923784416296,
+        1.048185932438238
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9949359059801532,
+          0.09290126439675712,
+          -0.03836532373034133
+        ],
+        [
+          0.0827295543005795,
+          -0.9736886712812476,
+          -0.2123350942820911
+        ],
+        [
+          -0.057082079820881905,
+          0.20808586326812514,
+          -0.9764435005013246
+        ]
+      ],
+      "cem_elapsed_sec": 462.62605676200474
+    },
+    {
+      "frame_index": 8,
+      "frame_id": "000008",
+      "frame_stem": "000008.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000008",
+      "binary_image_file": "000008.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000008/000008.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000008/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000008.png",
+      "joint_positions": [
+        -0.48911614540927717,
+        -1.0251334691703065,
+        0.06281430751081185,
+        -2.804551764384541,
+        -0.1334207873222497,
+        1.7996838478834956,
+        0.7293065010621724,
+        0.024088725283449252
+      ],
+      "robot_pose": [
+        -0.16626178569254602,
+        -0.08790409782790871,
+        0.6778695474306847,
+        0.0019945750925560953,
+        -0.0021654825977235398,
+        0.4509731111058146
+      ],
+      "reward": 300190.0,
+      "end_effector_position": [
+        0.09099032133903844,
+        -0.11262658434119224,
+        1.0443206809740293
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9967198315933775,
+          0.0779634729343405,
+          0.021708850648600307
+        ],
+        [
+          0.08060647203076465,
+          -0.980300382920758,
+          -0.1803157117728979
+        ],
+        [
+          0.007223155489149767,
+          0.18147411973454947,
+          -0.9833691930762057
+        ]
+      ],
+      "cem_elapsed_sec": 454.8083231310011
+    },
+    {
+      "frame_index": 9,
+      "frame_id": "000009",
+      "frame_stem": "000009.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000009",
+      "binary_image_file": "000009.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000009/000009.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000009/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000009.png",
+      "joint_positions": [
+        0.24238430990179216,
+        -0.9853167965145919,
+        0.06500731423768125,
+        -2.7764538428610654,
+        -0.14863811054201692,
+        1.8342205986995848,
+        0.848835520561634,
+        0.022020419691860145
+      ],
+      "robot_pose": [
+        -0.16527882956611128,
+        -0.07643095739142779,
+        0.673058803763293,
+        0.0014890827279032417,
+        -0.001726996774082929,
+        -0.23983838261228074
+      ],
+      "reward": 299588.0,
+      "end_effector_position": [
+        0.10698705293420788,
+        -0.09048573758680695,
+        1.04645272965282
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9985349840764833,
+          0.006551567247104476,
+          0.053711847314930374
+        ],
+        [
+          0.016829851234747673,
+          -0.9810117364697287,
+          -0.19321679279002174
+        ],
+        [
+          0.051426079792183145,
+          0.19383768951174746,
+          -0.9796848005567677
+        ]
+      ],
+      "cem_elapsed_sec": 423.26654410001356
+    },
+    {
+      "frame_index": 10,
+      "frame_id": "000010",
+      "frame_stem": "000010.rgb_mask_00",
+      "frame_dir": "/home/tykim/tmppp/Dream/Kinect/000010",
+      "binary_image_file": "000010.rgb_mask_00.png",
+      "binary_image_path": "/home/tykim/tmppp/Dream/Kinect/000010/000010.rgb_mask_00.png",
+      "camera_json_path": "/home/tykim/tmppp/Dream/Kinect/000010/best_camera_setting.json",
+      "rendered_frame_path": "/home/tykim/PhysicalAI_DreamBench/Data/Output/Dream/Kinect/Frames/000010.png",
+      "joint_positions": [
+        -0.31493194352248244,
+        -0.9984934552848796,
+        0.11245743210012504,
+        -2.7669157174801686,
+        -0.15310943954706246,
+        1.76343919104483,
+        0.73925907898714,
+        0.022183139925096445
+      ],
+      "robot_pose": [
+        -0.16317760478860846,
+        -0.08348929834030883,
+        0.6762480193903783,
+        0.0005375718744262486,
+        -0.00018277951754297993,
+        0.2703945112372472
+      ],
+      "reward": 299920.0,
+      "end_effector_position": [
+        0.09640012672608815,
+        -0.10393024525236413,
+        1.0516656170158167
+      ],
+      "end_effector_rotation_matrix": [
+        [
+          0.9957176241727703,
+          0.09243357212643409,
+          -0.0015644985387656702
+        ],
+        [
+          0.0893134781543612,
+          -0.9662002640105609,
+          -0.24182669919983948
+        ],
+        [
+          -0.02386452454378541,
+          0.24065137558274316,
+          -0.9703181951805444
+        ]
+      ],
+      "cem_elapsed_sec": 414.59975704801036
+    }
+  ]
+}
