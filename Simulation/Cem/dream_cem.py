@@ -1106,6 +1106,9 @@ class CEMActionPredictor:
         #self.output_json_path.parent.mkdir(parents=True, exist_ok=True)
         with open(self.output_json_path, "w") as f:
             json.dump(payload, f, indent=2)
+        
+        with open(save_result_path+'/result.json', "w") as f:
+            json.dump(payload, f, indent=2)
 
     def run(self):
         self._open_shared_executor()
@@ -1476,12 +1479,30 @@ def parse_args():
     parser.add_argument("--seg-model", type=str, default="sam3")
     parser.add_argument("--benchmark", type=str, default="azure")
     parser.add_argument("--cem-mode", type=str, default="pose")
+    parser.add_argument("--pid", type=int, default=0)
 
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
+
+    pid = args.pid
+    pid_to_data = []
+    # Azure / 000000 - 006393
+    for i in range(6394):
+        pid_to_data.append(('Azure', i, str(i).zfill(6)))
+    # Kinect / 000000 - 004965
+    for i in range(4966):
+        pid_to_data.append(('Kinect', i, str(i).zfill(6)))
+    # Realsense / 000000 - 005943
+    for i in range(5944):
+        pid_to_data.append(('Realsense', i, str(i).zfill(6)))
+
+    input_root = input_root + '/' + pid_to_data[pid][0]
+    start_frame = pid_to_data[pid][1]
+    max_frames = 1
+    save_result_path = '/mnt/nfs/Results/' + pid_to_data[pid][0] +'/' + pid_to_data[pid][2]
 
     input_root = None if args.input_root is None else Path(args.input_root)
     benchmark = (
