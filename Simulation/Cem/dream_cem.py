@@ -1494,12 +1494,12 @@ def main():
     # Azure / 000000 - 006393
     for i in range(6394):
         pid_to_data.append(('Azure', i, str(i).zfill(6)))
-    # Kinect / 000000 - 004965
-    for i in range(4966):
-        pid_to_data.append(('Kinect', i, str(i).zfill(6)))
-    # Realsense / 000000 - 005943
-    for i in range(5944):
-        pid_to_data.append(('Realsense', i, str(i).zfill(6)))
+    # # Kinect / 000000 - 004965
+    # for i in range(4966):
+    #     pid_to_data.append(('Kinect', i, str(i).zfill(6)))
+    # # Realsense / 000000 - 005943
+    # for i in range(5944):
+    #     pid_to_data.append(('Realsense', i, str(i).zfill(6)))
 
     input_root = None if args.input_root is None else Path(args.input_root)
 

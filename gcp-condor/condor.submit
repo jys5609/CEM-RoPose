@@ -8,4 +8,4 @@ Error                   = condor/$(cluster).$(process).err
 RequestCpus             = 60
 request_memory          = 100GB
 
-queue 36
+queue 6394
